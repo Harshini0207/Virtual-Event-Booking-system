@@ -1,0 +1,42 @@
+<!-- view_booking_details.php -->
+<?php include "db.php"; ?>
+
+<h2>Users</h2>
+<?php
+$r=mysqli_query($conn,"select * from users");
+while($row=mysqli_fetch_assoc($r)){
+echo $row['id']." ".$row['name']." ".$row['email']."<br>";
+}
+?>
+
+<h2>Organizers</h2>
+<?php
+$r=mysqli_query($conn,"select * from organizers");
+while($row=mysqli_fetch_assoc($r)){
+echo $row['id']." ".$row['name']." ".$row['email']."<br>";
+}
+?>
+
+<h2>Events</h2>
+<?php
+$r=mysqli_query($conn,"select * from events");
+while($row=mysqli_fetch_assoc($r)){
+echo $row['id']." ".$row['event_name']." ".$row['price']."<br>";
+}
+?>
+
+<h2>Bookings</h2>
+<?php
+$r=mysqli_query($conn,"select * from bookings");
+while($row=mysqli_fetch_assoc($r)){
+echo $row['id']." ".$row['event_name']." ".$row['price']."<br>";
+}
+?>
+
+<h2>Payments</h2>
+<?php
+$r=mysqli_query($conn,"select * from payments");
+while($row=mysqli_fetch_assoc($r)){
+echo $row['id']." ".$row['event_name']." ".$row['amount']." ".$row['status']."<br>";
+}
+?>

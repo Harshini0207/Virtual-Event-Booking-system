@@ -1,0 +1,10 @@
+{
+  "name": "virtual-event-booking",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.20.5",
+    "express": "^4.22.1",
+    "mysql2": "^3.22.3"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+<h2>Payment Page</h2>
+
+<form action="/paynow" method="post">
+
+<input type="hidden" id="bookingId" name="bookingId">
+
+<input type="text" id="title" name="title" readonly>
+
+<input type="number" id="amount" name="amount" readonly>
+
+<select name="method" required>
+<option value="">Select Payment Method</option>
+<option value="UPI">UPI</option>
+<option value="Card">Card</option>
+<option value="Net Banking">Net Banking</option>
+</select>
+
+<button type="submit">Pay Now</button>
+
+</form>
+
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("bookingId").value =
+params.get("bookingId");
+
+document.getElementById("title").value =
+params.get("title");
+
+document.getElementById("amount").value =
+params.get("amount");
+</script>
+
+</body>
+</html>

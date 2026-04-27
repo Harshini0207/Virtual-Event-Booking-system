@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Event</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+body{
+    background:#8ACBD0;
+}
+</style>
+<body>
+
+<div class="box">
+<h2>Book Event</h2>
+
+<form action="/book" method="post">
+
+<input type="text" name="title" placeholder="Event Title" required>
+
+<input type="text" name="description" placeholder="Description" required>
+
+<input type="date" name="date" required>
+
+<input type="time" name="time" required>
+
+<input type="text" name="duration" placeholder="Duration (Eg: 2 Hours)" required>
+
+<input type="number" name="price" placeholder="Price" required>
+
+<input type="number" name="seats" placeholder="Seats Booked" required>
+
+<button type="submit">Payment</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

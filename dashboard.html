@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#8ACBD0;
+}
+
+.navbar{
+background:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#333;
+}
+
+.menu a{
+text-decoration:none;
+margin-left:20px;
+}
+
+.menu button{
+padding:10px 18px;
+border:none;
+border-radius:8px;
+background:#427AB5;
+color:white;
+cursor:pointer;
+font-size:15px;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px 20px;
+color:black;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:40px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:20px;
+}
+
+.card{
+background:white;
+width:260px;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+.card h2{
+margin-bottom:15px;
+color:#333;
+}
+
+.card p{
+color:#666;
+margin-bottom:20px;
+}
+
+.card button{
+padding:12px 18px;
+border:none;
+background:#427AB5;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div class="logo">VEBS</div>
+
+<div class="menu">
+
+<a href="/"><button>Logout</button></a>
+</div>
+</div>
+
+<div class="hero">
+<h1>Welcome to Dashboard</h1>
+<p>Virtual Event Booking Management System</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h2>Book Event</h2>
+<p>Reserve your seat for upcoming virtual events.</p>
+<a href="book_event.html">
+<button>Open</button>
+</a>
+</div>
+
+<div class="card">
+<h2>Booking Details</h2>
+<p>View all booking records and payment details.</p>
+<a href="/view_booking_details">
+<button>Open</button>
+</a>
+</div>
+
+
+</div>
+
+</body>
+</html>
